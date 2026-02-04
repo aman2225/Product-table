@@ -1,0 +1,151 @@
+/* Base layout */
+.app {
+  min-height: 100vh;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-header {
+  margin-bottom: 1.5rem;
+}
+
+.app-header h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* Table container - scrollable on mobile */
+.table-container {
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.products-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background: #f8fafc;
+  font-weight: 600;
+  color: #334155;
+  border-bottom: 2px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.products-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.products-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.products-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Editable title */
+.editable-title {
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: background 0.15s;
+}
+
+.editable-title:hover {
+  background: #e0f2fe;
+}
+
+.editable-title:focus {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 2px;
+}
+
+.editable-input {
+  width: 100%;
+  min-width: 150px;
+  padding: 4px 8px;
+  border: 1px solid #94a3b8;
+  border-radius: 4px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.editable-input:focus {
+  outline: 2px solid #0ea5e9;
+  outline-offset: 0;
+  border-color: #0ea5e9;
+}
+
+/* Loading & status */
+.loading-indicator {
+  padding: 1rem;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.error-message {
+  padding: 1rem;
+  color: #dc2626;
+  text-align: center;
+}
+
+.error-banner {
+  padding: 1rem 1.5rem;
+  background: #fef2f2;
+  color: #dc2626;
+  border-radius: 8px;
+  border: 1px solid #fecaca;
+}
+
+.end-message {
+  padding: 1rem;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Sentinel - invisible trigger for intersection observer */
+.scroll-sentinel {
+  height: 1px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .products-table {
+    font-size: 0.8rem;
+  }
+
+  .products-table th,
+  .products-table td {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .editable-input {
+    min-width: 100px;
+  }
+}
