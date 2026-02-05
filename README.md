@@ -2,10 +2,6 @@
 
 A React application that displays products from the DummyJSON API in a table with editable product names and infinite scroll functionality.
 
-## Live Demo
-
-**Deployed URL:** [Add your Vercel/Netlify URL here after deployment]
-
 ## Features
 
 - **Product Table**: Displays Title, Brand, Category, Price, and Rating
@@ -87,7 +83,7 @@ Uses [DummyJSON Products API](https://dummyjson.com/products):
 
 No API keys or environment variables are required for this application. The DummyJSON API is free and does not require authentication.
 
-## Deployment (Vercel / Netlify)
+## Deployment
 
 ### Vercel
 
@@ -96,14 +92,3 @@ No API keys or environment variables are required for this application. The Dumm
 3. Framework preset: Vite
 4. Build command: `npm run build`
 5. Output directory: `dist`
-
-### Netlify
-
-1. Push code to GitHub
-2. Import project in [Netlify](https://netlify.com)
-3. Build command: `npm run build`
-4. Publish directory: `dist`
-
-## License
-
-MIT
